@@ -26,4 +26,12 @@ export class DataGenerator {
   static generatePhone() {
     return faker.phone.number();
   }
+
+  static generateCheckoutInfo() {
+    return {
+      firstName: faker.person.firstName(),
+      lastName: faker.person.lastName(),
+      postalCode: faker.location.zipCode()
+    };
+  }
 }
