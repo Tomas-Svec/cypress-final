@@ -1,0 +1,619 @@
+[
+  {
+    "description": "  Como desarrollador del sistema\n  Quiero probar los endpoints de usuarios\n  Para asegurar que la API funciona correctamente",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-de-usuarios;obtener-lista-de-usuarios-exitosamente",
+        "keyword": "Escenario",
+        "line": 10,
+        "name": "Obtener lista de usuarios exitosamente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que la API está disponible en el ambiente configurado",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 11,
+            "name": "realizo una petición GET al endpoint \"/users\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1390000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 12,
+            "name": "el código de respuesta debe ser 200",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 13,
+            "name": "la respuesta debe contener una lista de usuarios",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 14,
+            "name": "cada usuario debe tener los campos \"id\", \"email\" y \"name\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 15,
+            "name": "la lista debe contener al menos 5 usuarios",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-de-usuarios;crear-un-nuevo-usuario",
+        "keyword": "Escenario",
+        "line": 17,
+        "name": "Crear un nuevo usuario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que la API está disponible en el ambiente configurado",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 18,
+            "name": "que genero datos aleatorios para un nuevo usuario",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 19,
+            "name": "realizo una petición POST al endpoint \"/users\" con los datos generados",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 319000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 20,
+            "name": "el código de respuesta debe ser 201",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 21,
+            "name": "la respuesta debe contener el campo \"id\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 22,
+            "name": "el nombre del usuario creado debe coincidir con el enviado",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-de-usuarios;obtener-un-usuario-específico-por-id",
+        "keyword": "Escenario",
+        "line": 24,
+        "name": "Obtener un usuario específico por ID",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que la API está disponible en el ambiente configurado",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 25,
+            "name": "realizo una petición GET al endpoint \"/users/1\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 764000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 26,
+            "name": "el código de respuesta debe ser 200",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 27,
+            "name": "la respuesta debe contener los datos del usuario",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 28,
+            "name": "el usuario debe tener el email esperado",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-de-usuarios;actualizar-datos-de-un-usuario",
+        "keyword": "Escenario",
+        "line": 30,
+        "name": "Actualizar datos de un usuario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que la API está disponible en el ambiente configurado",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 31,
+            "name": "que genero un nombre aleatorio para actualizar",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 32,
+            "name": "realizo una petición PUT al endpoint \"/users/1\" con el nuevo nombre",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1160000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 33,
+            "name": "el código de respuesta debe ser 200",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-de-usuarios;obtener-diferentes-usuarios-por-id",
+        "keyword": "Esquema del escenario",
+        "line": 41,
+        "name": "Obtener diferentes usuarios por ID",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que la API está disponible en el ambiente configurado",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 36,
+            "name": "realizo una petición GET al endpoint \"/users/1\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 762000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 37,
+            "name": "el código de respuesta debe ser 200",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-de-usuarios;obtener-diferentes-usuarios-por-id",
+        "keyword": "Esquema del escenario",
+        "line": 42,
+        "name": "Obtener diferentes usuarios por ID",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que la API está disponible en el ambiente configurado",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 36,
+            "name": "realizo una petición GET al endpoint \"/users/2\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1349000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 37,
+            "name": "el código de respuesta debe ser 200",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-de-usuarios",
+    "line": 2,
+    "keyword": "Característica",
+    "name": "API de usuarios",
+    "tags": [],
+    "uri": "cypress\\e2e\\features\\api\\users.feature"
+  },
+  {
+    "description": "  Como usuario del sistema\n  Quiero poder iniciar sesión\n  Para acceder a las funcionalidades de la aplicación",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-en-la-aplicación;login-exitoso-con-credenciales-válidas",
+        "keyword": "Escenario",
+        "line": 10,
+        "name": "Login exitoso con credenciales válidas",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que el usuario navega a la página de login",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31039000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 11,
+            "name": "el usuario ingresa el nombre de usuario \"standard_user\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 482000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 12,
+            "name": "el usuario ingresa la contraseña \"secret_sauce\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 432000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 13,
+            "name": "el usuario hace click en el botón de login",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 14,
+            "name": "el usuario debería ver la página de inventario",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 583000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 15,
+            "name": "el usuario debería estar autenticado correctamente",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 353000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-en-la-aplicación;login-fallido-con-credenciales-inválidas",
+        "keyword": "Escenario",
+        "line": 17,
+        "name": "Login fallido con credenciales inválidas",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 8,
+            "name": "que el usuario navega a la página de login",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7292000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Cuando ",
+            "line": 18,
+            "name": "el usuario ingresa el nombre de usuario \"invalid_user\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 427000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 19,
+            "name": "el usuario ingresa la contraseña \"wrong_password\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 470000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 20,
+            "name": "el usuario hace click en el botón de login",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Entonces ",
+            "line": 21,
+            "name": "el usuario debería ver un mensaje de error",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Y ",
+            "line": 22,
+            "name": "el usuario no debería estar autenticado",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-en-la-aplicación",
+    "line": 2,
+    "keyword": "Característica",
+    "name": "Login en la aplicación",
+    "tags": [],
+    "uri": "cypress\\e2e\\features\\ui\\login.feature"
+  }
+]

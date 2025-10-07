@@ -1,0 +1,31 @@
+{
+  "name": "examenfinal-cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:ui:dev": "cypress run --env environment=dev --spec 'cypress/e2e/features/ui/**/*.feature'",
+    "test:ui:test": "cypress run --env environment=test --spec 'cypress/e2e/features/ui/**/*.feature'",
+    "test:api:dev": "cypress run --env environment=dev --spec 'cypress/e2e/features/api/**/*.feature'",
+    "test:api:test": "cypress run --env environment=test --spec 'cypress/e2e/features/api/**/*.feature'",
+    "test:all:dev": "cypress run --env environment=dev",
+    "test:all:test": "cypress run --env environment=test",
+    "test:chrome": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox",
+    "test:edge": "cypress run --browser edge",
+    "open:dev": "cypress open --env environment=dev",
+    "open:test": "cypress open --env environment=test",
+    "report": "node cucumber-html-report.js",
+    "test:report": "npm run test:all:dev && npm run report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^23.2.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.6",
+    "@faker-js/faker": "^10.0.0",
+    "cypress": "^15.3.0",
+    "multiple-cucumber-html-reporter": "^3.9.3"
+  }
+}
